@@ -1,0 +1,59 @@
+1. box-sizing
+ Khi 1 border được lập , nó được cấu thành từ width và height
+nhưng các tag bên trong nếu ta thêm padding or margin thì kích 
+thước của border cũng tăng theo
+ box-sizing giúp giải quyết vấn đề nếu bạn muốn width và heigh
+là kích thước đã bao gồm border và padding
+ các giá trị của box-sizing :
+   - content-box: giá trị mặc định
+   - boder-box : Khi thiết lập giá trị này, thì width và heigh 
+sẽ bao gồm cho cả phần nội dung, padding và border nhưng không bao gồm margin
+   - padding : giá trị này thì width và height chỉ bao gồm cho 
+phần nội dung và padding, không bao gồm border và margin.
+
+2.flexbox
+ - để sử dụng cần thêm thuộc tính display:flex vào thành phần cha của nó
+ - để điều chỉnh các items bên dùng các thuộc tính :
+ -flex-direction:
+    + row(default-ngang)
+    + column(dọc)
+    + row-reverse
+    + column-reverse
+ -flex-wrap:
+    + no-wrap(default-tất cả items trên cùng 1 hàng hoặc dòng)
+    + wrap (chuyển dòng khi width or height max)
+ -justify-content(căn items theo trục x):
+    + flex-start(căn theo lề trái)
+    + flex-end(căn theo lề phải)
+    + center(căn giữa theo trục x)
+    + space-around(căn đều giữa các items theo kc giữa)
+    + space-beetwen(căn đều kc items nhưng phần tử đầu nằm sát đầu
+phần tử cuối nẳm sát cuối)
+  -align-items(chỉnh items theo trục Y)
+    +stretch(mặc định - phần tử kéo dài lấp theo trục y của thẻ cha)
+    +baseline(căn chỉnh theo đường cơ sở-đường cơ sở như dòng gạch chân của chữ)
+    +flex-start
+    +flex-end 
+    +center
+  -align-content(sử dụng để căn chỉnh khoảng cách các item bên trong container theo
+dọc theo trục cross axis)
+    +flex-start
+    +flex-end
+    +center
+    +space-between
+    +space-around
+-các thuộc tính để xử lý từng item trong container
+ + order(Theo mặc định, các item sẽ hiển thị theo thứ tự xuất hiện trong HTML, nhưng với thuộc tính order,
+ bạn có thể sắp xếp lại vị trí sắp xếp của các item.)
+ + flex-grow (cho phép các phần tử giãn theo độ rộng của container.)
+ + flex-shrink(Thuộc tính flex-shrink ngược lại với thuộc tính flex-grow ở trên, nó không giãn ra mà lại co
+ lại khi chúng ta thay đổi độ rộng của container.)
+ + flex-basis(Thuộc tính flex-basis sử dụng để xác định độ dài ban đầu của một item.)
+ + align-self( có tác dụng tương tự như align-items của phần container nhưng sử dụng riêng cho từng item,
+ bạn có thể dùng nó để đặt lại vị trí cho một số item mà align-items đã quy định.)
+4.box-shadow
+Thuộc tính này dùng để tạo bóng mờ cho một vùng giao diện hay phần tử HTML 
+
+
+
+   
